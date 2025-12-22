@@ -1,10 +1,15 @@
+from agent.instruction_parser import parse_instruction
+
 def handle_instruction(instruction):
-    if not instruction:
-        return {
-            "message": "No instruction received"
-        }
+    """
+    Milestone-2 Agent:
+    - Accepts instruction
+    - Parses it into structured actions
+    """
+
+    parsed_actions = parse_instruction(instruction)
 
     return {
-        "message": "Instruction received successfully",
-        "received_instruction": instruction
+        "message": "Instruction parsed successfully",
+        "parsed_actions": parsed_actions
     }
