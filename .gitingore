@@ -1,7 +1,7 @@
 # Virtual environment
 venv/
 projenv/
-agent/__pycache__/
+__pycache__/
 *.pyc
 .env
 .DS_Store
