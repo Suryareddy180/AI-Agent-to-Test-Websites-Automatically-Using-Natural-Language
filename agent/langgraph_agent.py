@@ -1,12 +1,8 @@
 from agent.instruction_parser import parse_instruction
 
 def handle_instruction(instruction):
-    """
-    Milestone-2 Agent:
-    - Accepts instruction
-    - Parses it into structured actions
-    """
-
+    
+    
     parsed_actions = parse_instruction(instruction)
 
     return {
